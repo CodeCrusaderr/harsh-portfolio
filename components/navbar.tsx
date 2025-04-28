@@ -112,7 +112,18 @@ export default function Navbar() {
             ))}
           </motion.nav>
 
-          
+          {/* Mobile Menu Button */}
+          <motion.button
+            variants={itemVariants}
+            className="md:hidden p-2 rounded-lg hover:bg-muted/50 transition-colors"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </motion.button>
         </div>
       </motion.header>
 
@@ -132,7 +143,10 @@ export default function Navbar() {
                   <Mountain className="h-6 w-6 text-teal" />
                   <span className="font-bold text-xl tracking-tight">Harsh Zaveri</span>
                 </Link>
-                <button className="flex items-center justify-center" onClick={() => setIsMenuOpen(false)}>
+                <button 
+                  className="p-2 rounded-lg hover:bg-muted/50 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   <X className="h-6 w-6" />
                 </button>
               </div>
