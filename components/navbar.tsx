@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
-import { ModeToggle } from "@/components/mode-toggle"
 import { Mountain, Menu, X } from "lucide-react"
 
 export default function Navbar() {
@@ -113,12 +112,7 @@ export default function Navbar() {
             ))}
           </motion.nav>
 
-          <motion.div variants={itemVariants} className="flex items-center gap-4">
-            <ModeToggle />
-            <button className="md:hidden flex items-center justify-center" onClick={() => setIsMenuOpen(true)}>
-              <Menu className="h-6 w-6" />
-            </button>
-          </motion.div>
+          
         </div>
       </motion.header>
 

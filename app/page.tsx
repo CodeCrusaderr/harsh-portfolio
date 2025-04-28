@@ -64,48 +64,47 @@ export default function Home() {
       description:
         "A comprehensive nutritional food information app that helps users make healthier food choices with detailed nutritional breakdowns and personalized recommendations.",
       longDescription:
-        "Khao is a revolutionary food scanner app that provides detailed insights into food ingredients, additives, allergens, and nutritional scores. It offers intuitive scanning and searching features for easy access to comprehensive reports, tailors reports to users' health preferences and conditions, and enhances dietary choices with personalized warnings.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Flutter", "Firebase", "REST API", "UI/UX"],
-      link: "#",
-      github: "#",
+        "Khao is a revolutionary food scanner app that provides detailed insights into food ingredients, additives, allergens, and nutritional scores. It offers intuitive scanning and searching features for easy access to comprehensive reports, tailors reports to users' health preferences and conditions, and enhances dietary choices with personalized warnings. The app is committed to continuous innovation for promoting overall well-being and transparency in the food system.",
+      tags: ["Flutter", "Firebase", "UI/UX", "Mobile App"],
+      category: "mobile",
+      github: "https://github.com/CodeCrusaderr/Khao-The-App",
       type: "Mobile App",
     },
     {
       title: "HomeSync — Smart Home Management",
       description:
-        "A cross-platform smart home app for device control, room selection, and real-time monitoring with focus on performance and daily usability.",
+        "A smart home app for device control, room selection, and real-time monitoring with focus on performance and daily usability.",
       longDescription:
         "HomeSync is a comprehensive smart home management app built with Flutter and Firebase. It enables users to control devices, select rooms, and monitor their home in real-time. The app focuses on performance, daily usability, and easy adaptability with the 'Write Once, Run Everywhere' philosophy.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Flutter", "Dart", "Firebase", "IoT"],
+      tags: ["Flutter", "Dart", "Firebase", "Mobile App"],
+      category: "mobile",
       link: "#",
-      github: "#",
+      github: "https://github.com/CodeCrusaderr/HomeSync",
       type: "Mobile App",
     },
     {
-      title: "NanoHack — Smart City Surveillance",
+      title: "Quizverse — Multiplayer Quiz Platform",
       description:
-        "An advanced smart city surveillance car with integrated vision and network surveillance capabilities to enhance urban safety.",
+        "A real-time multiplayer quiz system to boost student engagement and collaborative learning with live performance dashboards.",
       longDescription:
-        "NanoHack is an advanced smart city surveillance car with integrated vision and network surveillance capabilities to enhance urban safety. It utilizes face detection technology for real-time criminal identification, sending immediate alerts to local authorities to improve security response times.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["IoT", "Python", "Computer Vision", "Raspberry Pi"],
+      "Quizverse is a real-time multiplayer quiz platform powered by Next.js and Gen AI, designed to enhance student engagement and collaborative learning through competitive, social quizzes. It offers live performance dashboards, a seamless mobile and desktop experience, and campus-wide scalability. To amplify the excitement, Quizverse introduces gamified elements like Power Cards — special abilities that let players freeze opponents or reduce their points, adding a strategic twist to every match.",
+      tags: ["Next.js", "Gen AI", "Web App", "Education", "Multiplayer"],
+      category: "web",
       link: "#",
-      github: "#",
-      type: "IoT Project",
+      github: "https://github.com/CodeCrusaderr/quizverse",
+      type: "Web App",
     },
     {
-      title: "Market Minds — Stock Market Simulator",
+      title: "HealthBuddy — Healthcare Management",
       description:
-        "A multiplayer stock market simulation game that teaches financial literacy through competitive trading scenarios and real-time market data.",
+        "A comprehensive healthcare application designed to simplify health management and empower individuals to take control of their wellness.",
       longDescription:
-        "Market Minds is a multiplayer stock market simulation game built with Flask that teaches financial literacy through competitive trading scenarios and real-time market data. The game simulates a stock market where stocks start with an initial price, and at regular intervals, news is released that affects stock prices.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Flask", "Python", "JavaScript", "WebSockets"],
+        "HealthBuddy is a comprehensive healthcare application designed to simplify health management and empower individuals to take control of their wellness. The app allows users to schedule appointments with healthcare providers, book lab tests, upload and manage medical prescriptions, and access detailed nutrition information for smarter dietary decisions. Users also receive timely notifications and guidelines about their booked lab tests and doctor appointments. Additionally, HealthBuddy features a growing health library with articles on essential healthcare topics, promoting awareness and proactive health management, all within a user-friendly interface.",
+      tags: ["Flutter", "Firebase", "Twilio", "Razorpay API", "GPay API", "Mobile App"],
+      category: "mobile",
       link: "#",
-      github: "#",
-      type: "Web App",
+      github: "https://github.com/CodeCrusaderr/healthbuddy",
+      type: "Mobile App",
     },
   ]
 
@@ -311,9 +310,7 @@ export default function Home() {
                   title={project.title}
                   description={project.description}
                   longDescription={project.longDescription}
-                  image={project.image}
                   tags={project.tags}
-                  link={project.link}
                   github={project.github}
                   delay={0.1 * index}
                   type={project.type}
@@ -345,12 +342,6 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button size="lg" asChild>
                   <Link href="/contact">Get in Touch</Link>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <Link href="/resume" className="group">
-                    Download Resume
-                    <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
                 </Button>
               </div>
             </div>
